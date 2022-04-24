@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form action="process.php" method="post" class="forms" > 
+        <H1>Registration Form</H1>
+
+        <div class="form-container">
+            <p>
+            <label for="userId">User Id:</label>
+                <input type="text" id="userId" name="User_Id" value=" user id" required><br><br> 
+            </p>
+            <p>                 
+            <label for="Password">Password:</label>
+                <input type="password" id="password" name="User_password" required><br><br>
+            </p> 
+            <p> 
+            <label for="name">Name:</label>
+                <input type="text" id="fname" name="first_name" value="name"><br><br>
+            </p>
+            <p>  
+            <label for="name">Address:</label>
+                <input type="text" id="address" name="home_address" value="optional"><br><br>
+            </p>
+            <p> 
+            <label for="name">Country:</label>
+                <select name="countries" id="country" required>
+                    <option value="rsa">South Africa</option>
+                    <option value="usa">United States of America</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="nl">Netherlands</option>
+                </select><br><br> 
+            </p>
+            <p>
+            <label for="zipcode">Zip Code:</label>
+                <input type="number" id="zipCode" name="zip_code" value="numbers only" required ><br><br>
+            </p>
+            <p>
+            <label for="email">Email:</label>    
+                <input type="email" id="email" name="email_address" value="youremail@email.com" required><br><br>
+            </p>
+            <p>
+            <label for="gender">Sex:</label>
+                <input type="radio" id="gender" name="male_sex"  >Male &nbsp &nbsp
+                <input type="radio" id="gender" name="female_sex">Female  <br><br> 
+            </p>
+            <p>
+            <label for="gender">Language:</label>
+                <input type="checkbox" id="english" name="english" required >English &nbsp &nbsp
+                <input type="checkbox" id="noneng" name="non_engloish" required>Non-English  <br><br> 
+            </p>
+           <!-- <p>About:</p> -->
+           <p>  
+            <label for="message"></label>  
+                <textarea name="" id="" cols="50" rows="5">Say something nice</textarea><br><br>
+            </p>    
+            <input type="submit" name="submit" id="submit_btn">              
+        </div>         
+    </form>
+
+</div>
+
+</body>
+</html>
